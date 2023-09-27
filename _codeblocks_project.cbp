@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="intro" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/intro" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/intro" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add library="D:/projects/codeblocks/_lib/winmm-7.1a-win32/WinMM.Lib" />
+		</Linker>
+		<Unit filename="src/client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/client.h" />
+		<Unit filename="src/config/config.h" />
+		<Unit filename="src/dat/font_meta.h" />
+		<Unit filename="src/dat/font_pixels.h" />
+		<Unit filename="src/dat/hexagon_pixels_1.h" />
+		<Unit filename="src/dat/hexagon_pixels_2.h" />
+		<Unit filename="src/dat/song_data.h" />
+		<Unit filename="src/dat/spritesheet_pixels.h" />
+		<Unit filename="src/fw/animation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/animation.h" />
+		<Unit filename="src/fw/broadcast.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/broadcast.h" />
+		<Unit filename="src/fw/easing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/easing.h" />
+		<Unit filename="src/fw/font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/font.h" />
+		<Unit filename="src/fw/glx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/glx.h" />
+		<Unit filename="src/fw/hxcmod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/hxcmod.h" />
+		<Unit filename="src/fw/image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/image.h" />
+		<Unit filename="src/fw/lut.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/lut.h" />
+		<Unit filename="src/fw/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/object_3d.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/object_3d.h" />
+		<Unit filename="src/fw/projection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/projection.h" />
+		<Unit filename="src/fw/render.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/render.h" />
+		<Unit filename="src/fw/sound.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/sound.h" />
+		<Unit filename="src/fw/sound_sync.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fw/sound_sync.h" />
+		<Unit filename="src/fw/types.h" />
+		<Unit filename="src/fx/billboard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fx/billboard.h" />
+		<Unit filename="src/fx/glenz.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fx/glenz.h" />
+		<Unit filename="src/fx/gradient.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fx/gradient.h" />
+		<Unit filename="src/fx/gradient_border.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fx/gradient_border.h" />
+		<Unit filename="src/fx/gradient_text.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fx/gradient_text.h" />
+		<Unit filename="src/fx/hexagon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fx/hexagon.h" />
+		<Unit filename="src/fx/starfield_2d.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fx/starfield_2d.h" />
+		<Unit filename="src/fx/texgen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fx/texgen.h" />
+		<Unit filename="src/fx/vector_balls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fx/vector_balls.h" />
+		<Unit filename="src/fx/vector_logo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fx/vector_logo.h" />
+		<Unit filename="src/resource.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/resource.h" />
+		<Unit filename="src/scene_0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/scene_0.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
