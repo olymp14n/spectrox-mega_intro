@@ -23,7 +23,6 @@
 #include "fx/hexagon.h"
 #include "fx/texgen.h"
 
-
 #define ANIM_VECTOR_LOGO 0
 #define ANIM_CUBE 1
 #define ANIM_COLOR_PLANES 2
@@ -111,7 +110,7 @@ static unsigned char _creditsTexts[][6][256] = {
 };
 
 ///////////////////////////////////////////////////////////////////////////////
-// INITAL KEYFRAME VARIABLES
+// INITIAL KEYFRAME VARIABLES
 ///////////////////////////////////////////////////////////////////////////////
 
 static const fw_vec4f _vectorLogoPosInit = {0};
@@ -213,7 +212,7 @@ static fw_vec4f _guruRot = _guruRotInit;
 static fw_vec4f _guruScale = _guruScaleInit;
 
 ///////////////////////////////////////////////////////////////////////////////
-// ANIM START / STOPP DECLARATIONS
+// ANIM START / STOP DECLARATIONS
 ///////////////////////////////////////////////////////////////////////////////
 
 static void animStartedVectorLogo(fw_animation *anim, fw_timer_data *time);
@@ -603,7 +602,6 @@ static void animCompletedGuru(fw_animation *anim, fw_timer_data *time) {
 }
 
 static void animStartedScrollText(fw_animation *anim, fw_timer_data *time) {
-
 }
 
 static void animCompletedScrollText(fw_animation *anim, fw_timer_data *time) {
@@ -963,7 +961,6 @@ static void renderTitle(fw_timer_data *time) {
         }
     }
 
-
     fw_image *finalImage = dstImage;
     if (_titleLogoDistortMode.x > 0) {
 
@@ -1154,10 +1151,6 @@ void renderCredits(fw_timer_data *time) {
     renderCreditsLine(_creditsPosLine6.x, _creditsPosLine6.y, _creditsTexts[p][5], strlen((char*)_creditsTexts[p][5]), &_gradientCredits, time);
 }
 
-///////////////////////////////////////////////////////////////////////////////
-// EXECUTE
-///////////////////////////////////////////////////////////////////////////////
-
 static void renderDemo(fw_timer_data *time) {
     fw_render_viewportLowRes(0,12);
 
@@ -1251,10 +1244,13 @@ static void renderGuru(fw_timer_data *time) {
     glVertex3f(w/2.f, h/2.f, 0);
     glEnd();
 
-
     glPopMatrix();
     glDisable(GL_TEXTURE_2D);
 }
+
+///////////////////////////////////////////////////////////////////////////////
+// EXECUTE
+///////////////////////////////////////////////////////////////////////////////
 
 void scene_0_execute(fw_timer_data *time) {
     fw_animation_processAnimationSchedule(&_animSchedule, time);
